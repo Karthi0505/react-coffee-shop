@@ -117,7 +117,7 @@ class Products extends Component {
 }
 
 export default connect(
-  (state) => ({ products: state.products.items }),
+  (state) => ({ products: state.products.filteredItems }),
   { fetchProducts, },
 )(Products);
 /*connect accepts two parameters. 
