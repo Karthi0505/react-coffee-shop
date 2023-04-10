@@ -6,7 +6,7 @@ const shortid = require("shortid");
 const app = express();
 app.use(bodyParser.json());
 
-mongoose.connect("mongodb://localhost/react-shopping-cart-db"
+mongoose.connect("mongodb://localhost/react-coffee-shop-db"
     , {
     useNewUrlParser: true,
     useCreateIndex: true, //this is deprecated in MongoDB current versions
