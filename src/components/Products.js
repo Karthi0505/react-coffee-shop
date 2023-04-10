@@ -5,6 +5,7 @@ import { Fade,  Zoom } from 'react-reveal';
 import Modal from 'react-modal';
 import { connect } from "react-redux";
 import { fetchProducts } from "../actions/productActions";
+import { addToCart } from "../actions/cartActions";
 
 class Products extends Component {
   constructor(props) {
@@ -47,12 +48,13 @@ class Products extends Component {
                       <p>{product.title}</p>
                     </a>
                     
-                  </div>
-                  <div className="product-price">
-                    <div>
-                      {product.price}
+                    <div className="product-price">
+                      <div>
+                        {product.price}
+                      </div>
+                      <button onClick={() => this.props.addToCart(product)} className="button primary">Add To Cart</button>
                     </div>
-                    <button onClick={() => this.props.addToCart(product)} className="button primary">Add To Cart</button>
+                    
                   </div>
                 </li>
               ))}
@@ -118,7 +120,10 @@ class Products extends Component {
 
 export default connect(
   (state) => ({ products: state.products.filteredItems }),
-  { fetchProducts, },
+  {
+    fetchProducts,
+    addToCart
+  },
 )(Products);
 /*connect accepts two parameters. 
   The first one is a function that accepts state, and returns an object that describes which part of state we going to use
