@@ -78,7 +78,8 @@ class Cart extends Component {
                   </li>
                   <li>
                     <div>Total:</div>
-                    <div>{formatCurrency(order.total)}</div>
+                    {/* <div>{formatCurrency(order.total)}</div> */}
+                    <div>{order.total}</div>
                   </li>
                   <li>
                     <div>Cart Items:</div>
@@ -108,7 +109,8 @@ class Cart extends Component {
                     <div>
                       <div>{item.title}</div>
                       <div className="right">
-                        {formatCurrency(item.price)} x {item.count}{" "}
+                        {/* {formatCurrency(item.price)} x {item.count}{" "} */}
+                        {item.price} x {item.count}{" "}
                         <button
                           className="button"
                           onClick={() => this.props.removeFromCart(item)}
@@ -129,9 +131,12 @@ class Cart extends Component {
                 <div className="total">
                   <div>
                     Total:{" "}
-                    {formatCurrency(
+                    {/* {formatCurrency(
                       cartItems.reduce((a, c) => a + c.price * c.count, 0)
-                    )}
+                    )} */}
+                    {
+                      cartItems.reduce((a, c) => a + c.price * c.count, 0)
+                    }
                   </div>
                   <button
                     onClick={() => {

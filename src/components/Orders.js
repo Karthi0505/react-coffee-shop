@@ -30,7 +30,8 @@ class Orders extends Component {
               <tr>
                 <td>{order._id}</td>
                 <td>{order.createdAt}</td>
-                <td> {formatCurrency(order.total)}</td>
+                {/* <td> {formatCurrency(order.total)}</td> */}
+                <td> {order.total}</td>
                 <td>{order.name}</td>
                 <td>{order.email}</td>
                 <td>{order.address}</td>
