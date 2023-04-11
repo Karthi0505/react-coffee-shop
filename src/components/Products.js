@@ -96,7 +96,8 @@ class Products extends Component {
                   </p>
                   <div className="product-price">
                     <div>
-                      {formatCurrency(product.price)}
+                      {/* {formatCurrency(product.price)} */}
+                      {product.price}
                     </div>
                     <button
                       className="button primary"
