@@ -5,9 +5,10 @@ import { filterProducts, sortProducts } from '../actions/productActions';
 class Filter extends Component {
   render() {
     return !this.props.filteredProducts ? (
-      <div>Loading...</div>
+      
+      <div>Loading... {console.log(this.props.filteredProducts)}</div>
     ) : (
-      <div>
+      <div className='filter'>
             <div className='filter-result'>{this.props.filteredProducts.length} Products</div>
             <div className='filter-sort'>
                 Order {" "}
@@ -43,12 +44,13 @@ class Filter extends Component {
   }
 }
 
-export default connect((state) => ({
-  size: state.products.size,
-  sort: state.products.sort,
-  products: state.products.items,
-  filterProducts: state.products.filteredItems,
-}),
+export default connect(
+  (state) => ({
+    size: state.products.size,
+    sort: state.products.sort,
+    products: state.products.items,
+    filteredProducts: state.products.filteredItems,
+  }),
   {
     filterProducts,
     sortProducts

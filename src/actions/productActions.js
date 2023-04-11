@@ -1,4 +1,4 @@
-import { FETCH_PRODUCTS, FETCH_PRODUCTS_BY_SIZE, ORDER_PRODUCTS_BY_PRICE } from "../types";
+import { FETCH_PRODUCTS, FILTER_PRODUCTS_BY_SIZE, ORDER_PRODUCTS_BY_PRICE } from "../types";
 
 export const fetchProducts = () => async (dispatch) => {
     const res = await fetch("/api/products");
@@ -12,7 +12,7 @@ export const fetchProducts = () => async (dispatch) => {
 
 export const filterProducts = (products, size) => (dispatch) => {
   dispatch({
-    type: FETCH_PRODUCTS_BY_SIZE,
+    type: FILTER_PRODUCTS_BY_SIZE,
     payload: {
       size: size,
       items:

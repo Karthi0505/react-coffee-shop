@@ -9,12 +9,13 @@ app.use(bodyParser.json());
 app.use("/", express.static(__dirname + "/build"));
 app.get("/", (req, res) => res.sendFile(__dirname + "/build/index.html"));
 
-mongoose.connect("mongodb://localhost/react-coffee-shop-db"
-    , {
-    useNewUrlParser: true,
-    useCreateIndex: true, //this is deprecated in MongoDB current versions
-    useUnifiedTopology: true,
-    }
+mongoose.connect(
+  "mongodb://localhost/react-coffee-shop-db"
+  , {
+  useNewUrlParser: true,
+  useCreateIndex: true, //this is deprecated in MongoDB current versions
+  useUnifiedTopology: true,
+  }
 );
 
 
