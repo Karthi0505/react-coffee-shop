@@ -44,13 +44,13 @@ class Products extends Component {
                       href={"#" + product._id}
                       onClick={() => this.openModal(product)}
                     >
+                      <p className="product-title">{product.title}</p>
                       <img src={product.image} alt={product.title} />
-                      <p>{product.title}</p>
                     </a>
                     
                     <div className="product-price">
                       <div>
-                        {product.price}
+                        RS: <span className="bold">{product.price}</span>
                       </div>
                       <button onClick={() => this.props.addToCart(product)} className="button primary">Add To Cart</button>
                     </div>

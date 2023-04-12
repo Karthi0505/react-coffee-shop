@@ -1,52 +1,88 @@
 {
   "products": [
     {
-      "_id": "dress1",
-      "image": "/images/dress1.jpg",
-      "title": "Midi sundress with shirring detail",
-      "description": "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
-      "availableSizes": ["X", "L", "XL", "XXL"],
-      "price": 29
+      "image": "/images/coffee1.jpg",
+      "title": "Cappuccino",
+      "description": "A cappuccino is an espresso-based coffee drink and is traditionally prepared with steamed milk foam (microfoam)",
+      "availableSizes": ["XS", "L", "XL", "XXL"],
+      "price": 50
     },
     {
-      "_id": "dress2",
-      "image": "/images/dress2.jpg",
-      "title": "Midi sundress with ruched front",
-      "description": "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
-      "availableSizes": ["X", "M", "L"],
-      "price": 18
+      "image": "/images/coffee2.jpg",
+      "title": "Black Coffee",
+      "description": "Black coffee is simply a mixture of water and coffee without any cream.",
+      "availableSizes": ["XS", "S", "M"],
+      "price": 20
     },
     {
-      "_id": "dress3",
-      "image": "/images/dress3.jpg",
-      "title": "Midi dress in pink ditsy floral",
-      "description": "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
-      "availableSizes": ["X", "M", "L"],
-      "price": 14
+      "image": "/images/coffee3.jpg",
+      "title": "Cortado",
+      "description": "The cortado coffee is a newcomer to the world of coffee, it only popping up on shop in the last few years.",
+      "availableSizes": ["S", "M", "L"],
+      "price": 40
     },
     {
-      "_id": "dress4",
-      "image": "/images/dress4.jpg",
-      "title": "cami maxi dress in polka dot",
-      "description": "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
-      "availableSizes": ["XL"],
+      "image": "/images/coffee4.jpg",
+      "title": "Normal Coffee",
+      "description": "An authentic coffee snob is someone who demands a regular coffee, with cream (or milk) and two sugars.",
+      "availableSizes": ["M"],
       "price": 25
     },
     {
-      "_id": "dress5",
-      "image": "/images/dress5.jpg",
-      "title": "Frill mini dress in yellow polka dot",
-      "description": "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
-      "availableSizes": ["X", "L", "XL"],
-      "price": 10
+      "image": "/images/coffee5.jpg",
+      "title": "Cappuccino",
+      "description": "A cappuccino is an espresso-based coffee drink and is traditionally prepared with steamed milk foam (microfoam)",
+      "availableSizes": ["M", "L", "XL"],
+      "price": 25
     },
     {
-      "_id": "dress6",
-      "image": "/images/dress6.jpg",
-      "title": "Midi tea dress in blue and red spot",
-      "description": "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
+      "image": "/images/coffee6.jpg",
+      "title": "Mocha",
+      "description": "Mocha means a type of quality coffee made from a specific coffee bean. It was originally grown in Mocha, Yemen.",
       "availableSizes": ["XL", "XXL"],
-      "price": 49
+      "price": 150
+    },
+    {
+      "image": "/images/coffee7.jpg",
+      "title": "Macchiato",
+      "description": "In Italian, the term macchiato translates as marked or stained, meaning a stained or marked coffee.",
+      "availableSizes": ["L", "XL"],
+      "price": 80
+    },
+    {
+      "image": "/images/coffee8.jpg",
+      "title": "Iced Coffee",
+      "description": "The iced version will not have frothy or steamed milk, as it simply doesn't translate well into the iced version.",
+      "availableSizes": ["L", "XL", "XXL"],
+      "price": 50
+    },
+    {
+      "image": "/images/coffee9.jpg",
+      "title": "Irish Coffee",
+      "description": "A cappuccino is an espresso-based coffee drink and is traditionally prepared with steamed milk foam (microfoam)",
+      "availableSizes": ["XS", "S", "M"],
+      "price": 100
+    },
+    {
+      "image": "/images/coffee10.jpg",
+      "title": "Drip Coffee",
+      "description": "Drip coffee is made by pouring boiling water over ground coffee.",
+      "availableSizes": ["XL", "XXL"],
+      "price": 40
+    },
+    {
+      "image": "/images/coffee11.jpg",
+      "title": "Instant Coffee",
+      "description": "The soluble and volatile contents of beans are extracted. Then water is removed so concentrated powder are left over.",
+      "availableSizes": ["XL", "S", "M", "L"],
+      "price": 20
+    },
+    {
+      "image": "/images/coffee12.jpg",
+      "title": "Decaf",
+      "description": "Made in a process to remove the majority of the caffeine. However, decaffeinated coffee is not completely caffeine free",
+      "availableSizes": ["S", "M", "XS"],
+      "price": 30
     }
   ]
 }

@@ -18,6 +18,10 @@ textarea {
   font-size: 1.6rem;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .grid-container {
   display: grid;
   grid-template-areas:
@@ -82,7 +86,6 @@ footer {
 }
 .products li {
   flex: 0 1 29rem;
-  height: 47rem;
   padding: 1rem;
 }
 .product {
@@ -90,15 +93,30 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 3px;
+  border: 1px solid #eeeeee;
+}
+.product:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.4);
+  border: 1px solid #ccc;
 }
 .product img {
   max-width: 37rem;
   max-height: 37rem;
 }
+.product-title {
+  padding: 0 15px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #333;
+  margin: 15px 0px;
+}
 .product-price {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 12px 15px 15px 15px;
 }
 .product-price div,
 .product-price button {
