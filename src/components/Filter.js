@@ -16,13 +16,13 @@ class Filter extends Component {
                   value={this.props.sort}
                   onChange={(e) =>
                     this.props.sortProducts(
-                      this.props.filterProducts,
+                      this.props.filteredProducts,
                       e.target.value
                     )
                   }
                 >
                     <option value="latest">Latest</option>
-                    <option value="lowest">Latest</option>
+                    <option value="lowest">Lowest</option>
                     <option value="highest">Highest</option>
                 </select>
             </div>
